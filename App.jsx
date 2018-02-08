@@ -11,24 +11,38 @@ class App extends React.Component {
              <Header></Header>
             <h1 style = {myStyle}>KK</h1>
             <Content></Content>
+            <Button></Button>
          </div>
       );
    }
 }
 class Header extends React.Component {
     render() {
-        return ( <div >
+        return ( <div className="header-background">
             < h1 > QUI HEADER </h1> </div>
         );
     }
 }
 class Content extends React.Component {
     render() {
-        return ( <div>
-            <h2 > Contenuto </h2> 
-            <p> Questo è un contenuto!!! </p> 
+        return (
+            
+            <div className="alert alert-success" role="alert">
+            Tutto OK
             </div>
         );
     }
 }
+
+class Button extends React.Component {
+    render() {
+        return (
+            <div>
+            <button className="btn btn-primary" >CHIUDI</button>
+            </div>
+        );
+    }
+}
+
+		
 export default App;
