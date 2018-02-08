@@ -8,7 +8,9 @@ class App extends React.Component {
       }
       return (
          <div>
+             <Header></Header>
             <h1 style = {myStyle}>KK</h1>
+            <Content></Content>
          </div>
       );
    }
@@ -16,15 +18,15 @@ class App extends React.Component {
 class Header extends React.Component {
     render() {
         return ( <div >
-            < h1 > Header </h1> </div>
+            < h1 > QUI HEADER </h1> </div>
         );
     }
 }
 class Content extends React.Component {
     render() {
         return ( <div>
-            <h2 > Content </h2> 
-            <p> The content text!!! </p> 
+            <h2 > Contenuto </h2> 
+            <p> Questo è un contenuto!!! </p> 
             </div>
         );
     }
